@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>My Family Tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .level {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .node {
+            background: #121a3a;
+            border: 2px solid #4f6cff;
+            border-radius: 10px;
+            padding: 10px;
+            min-width: 140px;
+        }
+
+        .node input {
+            width: 100%;
+            padding: 6px;
+            border-radius: 6px;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .line {
+            width: 2px;
+            height: 25px;
+            background: #4f6cff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Family Tree</h1>
+
+<div class="tree">
+
+    <!-- Kakek Nenek -->
+    <div class="level">
+        <div class="node"><input value="Kakek"></div>
+        <div class="node"><input value="Nenek"></div>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- Ayah Ibu -->
+    <div class="level">
+        <div class="node"><input value="Ayah"></div>
+        <div class="node"><input value="Ibu"></div>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- Kamu & Saudara -->
+    <div class="level">
+        <div class="node"><input value="Saya"></div>
+        <div class="node"><input value="Saudara"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
